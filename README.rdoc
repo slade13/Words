@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version = 2.2.1
+Rails version = 4.2.6
 
-Things you may want to cover:
+Fork and clone project on your local machine then install all dependencies as follow:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<tt>bundle install --without production</tt>
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== TODO LIST:
+
+* Create layout for application
+* Change view for Categories:
+  -view should display image, name and description of each category
+  -create links for packages from desired categories
+* Change Packagages views
+ -each package should be displayed in friendly way and it should contains a link to solving quiz with the words from chosen category
