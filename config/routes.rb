@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'categories#index'
   resources :words
   resources :packages
   resources :categories
