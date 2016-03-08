@@ -24,14 +24,21 @@ Fork and clone project to your local machine, then install all dependencies as f
 * Change packagages view:
 
 -each package should be displayed in a friendly way
+
 -create links to quizes based on packages
+
 -view for creating new package should get text file as an input file will be in csv format and separator will be chosen from list
+
 -create links for downloading package in csv format
 
 * Add constraints in models:
+
 -each name should be greater than 2 characters
+
 -description can't be null
+
 -foregin keys can't be null
+
 -names of categories and packages have to be unique
  
 * Add internationalization for english and polish language
