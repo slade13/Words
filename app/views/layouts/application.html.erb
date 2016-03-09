@@ -35,9 +35,9 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/categories">Categories</a></li>
-        <li><a href="/packages">Packages</a></li>
-        <li><a href="/words">Words</a></li>
+        <li class="<%= 'active' if params[:controller] == 'categories' %>"><a href="/categories">Categories</a></li>
+        <li class="<%= 'active' if params[:controller] == 'packages' %>"><a href="/packages">Packages</a></li>
+        <li class="<%= 'active' if params[:controller] == 'words' %>"><a href="/words">Words</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
