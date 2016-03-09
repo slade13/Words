@@ -13,7 +13,7 @@ Fork and clone project to your local machine, then install all dependencies as f
 
 == TODO LIST:
 
-* Create main layout for application
+<font color="green">* Create main layout for application</font>
 
 * Change view for categories:
 
