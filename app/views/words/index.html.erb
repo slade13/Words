@@ -17,7 +17,7 @@
       <tr>
         <td><%= word.english_name %></td>
         <td><%= word.polish_name %></td>
-        <td><%= word.package_id %></td>
+        <td><%= word.package.name %></td>
         <td><%= link_to 'Show', word %></td>
         <td><%= link_to 'Edit', edit_word_path(word) %></td>
         <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
