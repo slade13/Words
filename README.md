@@ -14,13 +14,13 @@ Fork and clone project to your local machine, then install all dependencies as f
 
 ## TODO LIST:
 
-~~Create main layout for application~~
+~~* Create main layout for application~~
 
-* Change view for categories:
+~~* Change view for categories:~~
 
-  -view should display image, name and description of each category in square boxes
+  ~~-view should display image, name and description of each category in square boxes~~
   
-  -create links for packages from desired categories
+  ~~-create links for packages from desired categories~~
   
 * Change packages view:
 
