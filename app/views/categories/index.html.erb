@@ -1,24 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Categories</h1>
-
-<div class="card-deck-wrapper">
-  <div class="card-deck">
-      <% @categories.each do |category| %>
-        <div class="card">
-          <img class="card-img-top" data-src="<%= category.image %>" alt="Card image cap">
-          <div class="card-block">
-            <h4 class="card-title"><%= category.name %><</h4>
-            <p class="card-text"><%= category.description %><</p>
-            <p class="card-text"><small class="text-muted">
-              <%= link_to 'Show', category %>
-              <%= link_to 'Edit', edit_category_path(category) %>
-              <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </small></p>
+<div class="container-fluid">
+  <% @categories.each_slice(3) do |categories| %>
+    <div class="row">
+        <% categories.each do |category| %>
+          <div class="col-xs-4">
+            <div class="card">
+              <div class="card-block">
+                <img src="<%= category.image %>" class="img-responsive" />
+                <h4 class="card-title"><%= category.name %></h4>
+                <p class="card-text"><%= category.description %></p>
+                <%= link_to 'Show', category %>
+                <%= link_to 'Edit', edit_category_path(category) %>
+                <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </div>
+            </div>
           </div>
-        </div>
-    <% end %>
-  </div>
+        <% end %>
+    </div>
+  <% end %>
 </div>
 <br>
 
