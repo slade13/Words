@@ -3,7 +3,7 @@
 <h1>Listing Categories</h1>
 <div class="container-fluid">
   <% @categories.each_slice(3) do |categories| %>
-    <div class="row">
+    <div class="row" style="margin-bottom: 20px;">
         <% categories.each do |category| %>
           <div class="col-xs-4">
             <div class="card">
@@ -11,9 +11,9 @@
                 <img src="<%= category.image %>" class="img-responsive" />
                 <h4 class="card-title"><%= category.name %></h4>
                 <p class="card-text"><%= category.description %></p>
-                <%= link_to 'Show', category %>
-                <%= link_to 'Edit', edit_category_path(category) %>
-                <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+                <% link_to 'Show', category, class: 'btn btn-primary' %>
+                <% link_to 'Edit', edit_category_path(category), class: 'btn btn-warning' %>
+                <% link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
               </div>
             </div>
           </div>
