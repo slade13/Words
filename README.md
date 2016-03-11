@@ -1,4 +1,5 @@
-== About Words
+#README
+## About Words
 Words is an application based on Rails framework. The main purpose of this app is learning new words.
 
 
@@ -11,17 +12,17 @@ Fork and clone project to your local machine, then install all dependencies as f
 <tt>bundle install --without production</tt>
 
 
-== TODO LIST:
+## TODO LIST:
 
-* Create main layout for application
+~~* Create main layout for application~~
 
-* Change view for categories:
+~~* Change view for categories:~~
 
-  -view should display image, name and description of each category in square boxes
+~~-view should display image, name and description of each category in square boxes~~
   
-  -create links for packages from desired categories
+~~-create links for packages from desired categories~~
   
-* Change packages view:
+* Change view for categories show method:
 
 -each package should be displayed in a friendly way
 
@@ -42,3 +43,5 @@ Fork and clone project to your local machine, then install all dependencies as f
 -names of categories and packages have to be unique
  
 * Add internationalization for english and polish language
+
+* categories#show should be routed by name instead ID
