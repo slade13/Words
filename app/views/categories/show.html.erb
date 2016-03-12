@@ -12,18 +12,23 @@
 </div>
 <div class="container-fluid">
   <% @packages.each do |package| %>
-      <a href="<%= package_path(package) %>">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="row">
           <div class="card">
-            <div class="card-block">
-              <div>
-                <h4><%= package.name %></h4>
-                <p><%= package.description %></p>
+            <a href="<%= package_path(package) %>" style="text-decoration: none;">
+              <div class="card-block">
+              <div class="bs-callout bs-callout-info package">
+                <h4>
+                  <%= package.name %>
+                  <span class="badge"><%= package.words.size() %></span>
+                </h4>
+                <p style="color: #337ab7;">
+                  <%= package.description %>
+                </p>
               </div>
             </div>
+            </a>
           </div>
         </div>
-      </a>
   <% end %>
 </div>
 
