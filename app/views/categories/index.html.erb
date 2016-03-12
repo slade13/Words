@@ -12,9 +12,6 @@
                   <div class="description">
                     <h4><%= category.name %></h4>
                     <p><%= category.description %></p>
-                    <% link_to 'Show', category, class: 'btn btn-primary' %>
-                    <% link_to 'Edit', edit_category_path(category), class: 'btn btn-warning' %>
-                    <% link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
                   </div>
                 </div>
                 </a>
@@ -22,6 +19,3 @@
             </div>
         <% end %>
 </div>
-<br>
-
-<%= link_to 'New Category', new_category_path %>
