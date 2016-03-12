@@ -1,30 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Packages</h1>
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Category</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @packages.each do |package| %>
-      <tr>
-        <td><%= package.name %></td>
-        <td><%= package.description %></td>
-        <td><%= package.category.name %></td>
-        <td><%= link_to 'Show', package %></td>
-        <td><%= link_to 'Edit', edit_package_path(package) %></td>
-        <td><%= link_to 'Destroy', package, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @packages.each do |package| %>
+    <div class="row">
+      <div class="card">
+        <a href="<%= package_path(package) %>" style="text-decoration: none;">
+          <div class="card-block">
+            <div class="bs-callout bs-callout-info package">
+              <h4>
+                <%= package.name %>
+                <span class="badge"><%= package.words.size() %></span>
+              </h4>
+              <p style="color: #337ab7;">
+                <%= package.description %>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+<% end %>
 
 <br>
 
