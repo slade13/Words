@@ -10,21 +10,22 @@
     <p><%= @category.description %></p>
   </div>
 </div>
-
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @category.image %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @category.description %>
-</p>
+<div class="container-fluid">
+  <% @packages.each do |package| %>
+      <a href="<%= package_path(package) %>">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+          <div class="card">
+            <div class="card-block">
+              <div>
+                <h4><%= package.name %></h4>
+                <p><%= package.description %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+  <% end %>
+</div>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
