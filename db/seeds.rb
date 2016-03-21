@@ -24,7 +24,7 @@ p2 = Package.create(name: 'Home', description: 'Types of buildings and furniture
 
 Word.create(english_name: 'home', polish_name: 'dom', package: p2);
 Word.create(english_name: 'table', polish_name: 'stół', package: p2);
-Word.create(english_name: 'desk', polish_name: 'biórko', package: p2);
+Word.create(english_name: 'desk', polish_name: 'biurko', package: p2);
 Word.create(english_name: 'flat', polish_name: 'mieszkanie', package: p2);
 Word.create(english_name: 'kitchen', polish_name: 'kuchnia', package: p2);
 Word.create(english_name: 'room', polish_name: 'pokój', package: p2);
